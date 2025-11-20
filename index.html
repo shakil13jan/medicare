@@ -1,0 +1,117 @@
+            <html lang="en">
+            <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>Medical Service - One Page</title>
+            <link rel="stylesheet" href="style.css" />
+            </head>
+
+
+            <body>
+            <header>
+            <div class="left">
+            <div class="logo">
+            <div class="mark">MC</div>
+            <div>
+            <div class="brand">Medicare</div>
+            <div class="tag">Health Services</div>
+            </div>
+            </div>
+            </div>
+
+
+
+            <nav>
+            <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#footer">Footer</a></li>
+            </ul>
+            </nav>
+
+
+
+            <div class="right">
+            <button class="linkish" onclick="scrollToContact()">Contact</button>
+            <button class="btn" onclick="openLogin()">Login</button>
+            </div>
+            </header>
+            <main id="home">
+            <section class="hero">
+            <div>
+            <h1>Medicare — Quality Medical Services</h1>
+            <p>Choose a service below and click Book Now — login is required to continue.</p>
+            </div>
+            </section>
+
+            <section id="services" class="grid">
+            <article class="card">
+            <img src="https://via.placeholder.com/600x400?text=Hospital+Care" />
+            <div class="card-body">
+            <h3>Hospital Care</h3>
+            <p>Specialist inpatient medical services.</p>
+            <button class="btn" onclick="openLogin()">Book Now</button>
+            </div>
+            </article>
+
+            <article class="card">
+            <img src="https://via.placeholder.com/600x400?text=Diagnostics" />
+            <div class="card-body">
+            <h3>Diagnostics</h3>
+            <p>Blood tests, X-ray, ultrasound & more.</p>
+            <button class="btn" onclick="openLogin()">Book Now</button>
+            </div>
+            </article>
+
+            <article class="card">
+            <img src="https://via.placeholder.com/600x400?text=Dental+Care" />
+            <div class="card-body">
+            <h3>Dental Care</h3>
+            <p>Preventive and surgical dental treatment.</p>
+            <button class="btn" onclick="openLogin()">Book Now</button>
+            </div>
+            </article>
+
+            <article class="card">
+            <img src="https://via.placeholder.com/600x400?text=Ward+Visit" />
+            <div class="card-body">
+            <h3>Ward Visit</h3>
+            <p>Home or hospital ward visit booking.</p>
+            <button class="btn" onclick="openLogin()">Book Now</button>
+            </div>
+            </article>
+
+        
+            </section>
+
+            <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Phone: +880 17736157 | Email: mirzashakil.13jan@gmail.com</p>
+            </section>
+
+            <footer id="footer">
+            © 2025 Medicare — Dhaka, Bangladesh
+            </footer>
+            </main>
+
+            <!-- Login Modal -->
+
+
+            <div id="modal" class="modal-backdrop">
+            <div class="modal">
+            <button class="close-btn" onclick="closeLogin()">✕</button>
+            <h2>Login</h2>
+            <form onsubmit="handleLogin(event)">
+            <label>Email</label>
+            <input id="email" type="text" required />
+            <label>Password</label>
+            <input id="password" type="password" required />
+            <button class="btn" type="submit">Login</button>
+            </form>
+            </div>
+            </div>
+
+            <script src="script.js"></script>
+            </body>
+            </html>
