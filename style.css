@@ -11,19 +11,20 @@ header
     justify-content:space-between;
     align-items:center;
     padding:15px 20px;
-    background:#fff;
+    background:#06abcc;
     border-bottom:1px solid #ddd;
     position:sticky;
     top:0;
-    z-index:10}
-
+    z-index:10
+}
 .nav-list
 {
     display:flex;
     gap:20px;
     list-style:none;
     padding:0;
-    margin:0}
+    margin:0
+}
 .nav-list a
 {
     text-decoration:none;
@@ -45,9 +46,7 @@ header
     font-weight:bold
 }
 
-.btn
-
-{
+.btn{
     background:#0b74da;
     color:#fff;
     padding:8px 14px;
@@ -55,62 +54,82 @@ header
     border-radius:6px;
     cursor:pointer
 }
+
 .linkish
-{
-    background:none;
+{background:none;
     border:none;
     color:#0b74da;
     cursor:pointer
 }
+
 main
 {
     max-width:1100px;
     margin:auto;
     padding:20px
 }
+.hero
+{
+    text-align:center;
+    margin-top:20px
+}
+.hero h1
+{
+    font-size:28px;
+    margin-bottom:10px
+}
+.hero p
+{
+    font-size:16px;
+    color:#222
+}
 .grid
 {
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:20px;
-    margin-top:20px
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;margin-top:20px
 }
 .card
-
-{
-    background:#fff;
-    border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    overflow:hidden
+{background:#48abb2;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s
 }
 .card img
 {
     width:100%;
-    height:160px;
-    object-fit:cover
+    height:200px;
+    object-fit:cover;
+    transition:0.4s
 }
-.card-body
+.card:hover img
+{
+    transform:scale(1.08);
+    box-shadow:0 10px 20px rgba(0,0,0,0.4)
+}
 {
     padding:15px
 }
 footer
 {
+    font-size: 30px;
     text-align:center;
     padding:20px;
-    color:#666;
+    color:#09f7eb;
     margin-top:30px
 }
 
-
-/* Modal */
-.modal-backdrop
-{position:fixed;
+.modal-backdrop{
+    position:fixed;
     inset:0;
     background:rgba(0,0,0,0.5);
     display:none;
     justify-content:center;
     align-items:center
 }
-.modal{background:#fff;
+.modal{
+    background:#fff;
     padding:20px;
     border-radius:10px;
     width:300px;
@@ -127,6 +146,7 @@ footer
     cursor:pointer
 }
 .modal input
+
 {
     width:100%;
     padding:10px;
